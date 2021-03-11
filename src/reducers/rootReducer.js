@@ -1,8 +1,8 @@
-import { conmbineReducers } from 'redux'
+import { combineReducers } from 'redux'
 import booksReducer from './bookReducer'
 
 
-const rootReducer = conmbineReducers({
+const rootReducer = combineReducers({
     books: booksReducer
 })
 
