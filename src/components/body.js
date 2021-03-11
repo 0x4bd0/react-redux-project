@@ -11,7 +11,7 @@ const BodyC = () => {
         <div className="body">
             {
                 state.books.map(item => (
-                    <BookC book={item}></BookC>
+                    <BookC book={item} key={item.id}></BookC>
                 ))
             }
         </div>

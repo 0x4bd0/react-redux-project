@@ -33,6 +33,14 @@ code {
     margin: 20px;
 }
 
+.addBook {
+  padding: 10px 20px;
+    border-radius: 20px;
+    border: 0px;
+    color: white;
+    background-color: turquoise;
+}
+
 
 .book {
   flex: 1;
@@ -41,4 +49,37 @@ code {
   background-color: white;
   border-radius: 30px;
   box-shadow: 1px 2px #8888882e;
+}
+
+
+.addBookContainer{
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    height: 100px;
+    border-radius: 20px;
+    height: 100px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #40e0d063;
+}
+
+.addBookSubmit{
+      border: 0px;
+    color: white;
+    background-color: turquoise;
+    padding: 5px 8px;
+    border-radius: 20px;
+}
+
+.addBookInput{
+      border: 1px solid #8080806b;
+    border-radius: 20px;
+    padding: 5px;
 }
