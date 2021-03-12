@@ -38,6 +38,13 @@ const booksReducer = (state = initState, action = {}) => {
             ]
         case 'DELETE_BOOK':
             return [...state].filter(item => item.id !== payload.id)
+        case 'UPDATE_BOOK':
+            {
+                let tmp = [...state]
+                tmp[tmp.findIndex(item => item.id === payload.id)].title = payload.title
+                tmp[tmp.findIndex(item => item.id === payload.id)].author = payload.author
+                return tmp
+            }
         default:
             return state
     }
