@@ -83,3 +83,8 @@ code {
     border-radius: 20px;
     padding: 5px;
 }
+
+
+.nameValidation {
+  color: red;
+}
