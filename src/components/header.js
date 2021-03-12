@@ -13,7 +13,7 @@ const HeaderC = () => {
 
     return (
         <div className="header">
-            <h1>Books :</h1>
+            <h1>My Books</h1>
             <button className="addBook" onClick={() => showFormButtonClicked()}>Add Book</button>
         </div>
     );

@@ -39,6 +39,7 @@ code {
     border: 0px;
     color: white;
     background-color: turquoise;
+    outline: none;
 }
 
 
@@ -60,7 +61,7 @@ code {
 
 .addBookContainer{
      display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
     column-gap: 30px;
@@ -68,26 +69,30 @@ code {
     align-items: center;
     justify-content: center;
     margin: 20px;
-    height: 100px;
     border-radius: 20px;
-    height: 100px;
     background-color: white;
     border-radius: 20px;
     border: 1px solid #40e0d063;
+      padding: 25px;
 }
 
 .addBookSubmit{
       border: 0px;
     color: white;
-    background-color: turquoise;
-    padding: 5px 8px;
+    background-color: #19a91ec2;
+    padding: 8px 10px;
     border-radius: 20px;
+    flex:1;
+    outline: none;
 }
 
 .addBookInput{
       border: 1px solid #8080806b;
     border-radius: 20px;
-    padding: 5px;
+    padding: 12px;
+    flex :  1;
+        width: 300px;
+        outline: none;
 }
 
 
@@ -103,4 +108,13 @@ code {
 
 .bookItemContent {
       font-weight: 100;
+}
+
+
+.header {
+      background-color: white;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 20px;
+      box-shadow: 1px 2px #8888882e;
 }

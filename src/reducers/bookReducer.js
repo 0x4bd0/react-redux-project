@@ -32,7 +32,8 @@ const booksReducer = (state = initState, action = {}) => {
                 ...state,
                 {
                     title: payload.title,
-                    id: state[state.length - 1].id + 1
+                    id: state[state.length - 1].id + 1,
+                    author: payload.author ? payload.author : 'Anonymous'
                 }
             ]
         default:
