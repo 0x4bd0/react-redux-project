@@ -49,6 +49,12 @@ code {
   background-color: white;
   border-radius: 30px;
   box-shadow: 1px 2px #8888882e;
+  height: 300px;
+  display: flex;
+    align-items: center;
+    align-content: center;
+     padding: 5px;
+    flex-direction: column;
 }
 
 
@@ -87,4 +93,14 @@ code {
 
 .nameValidation {
   color: red;
+}
+
+.bookItem {
+  flex: 1;
+  flex-grow: initial;
+}
+
+
+.bookItemContent {
+      font-weight: 100;
 }

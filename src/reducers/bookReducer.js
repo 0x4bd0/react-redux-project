@@ -3,19 +3,23 @@
 const initState = [
     {
         id: 1,
-        title: 'Harry potter'
+        title: 'Harry potter',
+        author: 'John Doe'
     },
     {
         id: 2,
-        title: 'Harry potter 2'
+        title: 'Harry potter 2',
+        author: 'John Doe'
     },
     {
         id: 3,
-        title: 'Harry potter 3'
+        title: 'Harry potter 3',
+        author: 'John Doe'
     },
     {
         id: 4,
-        title: 'Harry potter 4'
+        title: 'Harry potter 4',
+        author: 'John Doe'
     },
 ]
 
