@@ -9,10 +9,10 @@ const addBookReducer = (state = initState, action = {}) => {
     const { type, payload } = action
 
     switch (type) {
-        case 'showOrHide':
+        case 'SHOW_HIDE_FORM':
             {
-                let tmp = state
-                tmp.showForm = !tmp.showForm
+                let tmp = { ...state }
+                tmp.showForm = !state.showForm
                 return tmp
             }
         default:
