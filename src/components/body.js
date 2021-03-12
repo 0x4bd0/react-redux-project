@@ -5,8 +5,6 @@ import BookC from "./book";
 const BodyC = () => {
     const state = useSelector(rootReducer)
 
-    console.log(state)
-
     return (
         <div className="body">
             {

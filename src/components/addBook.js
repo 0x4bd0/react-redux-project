@@ -1,9 +1,17 @@
+import { useSelector } from "react-redux";
+import rootReducer from "../reducers/rootReducer";
+
 const AddBookC = () => {
+    const state = useSelector((state) => state.addBook)
+
+    console.log(state)
     return (
-        <div className="addBookContainer">
-            <input type="text" class="addBookInput" />
-            <button class="addBookSubmit">+</button>
-        </div>
+
+        state.showForm && < div className="addBookContainer" >
+            <input type="text" className="addBookInput" />
+            <button className="addBookSubmit">+</button>
+        </div >
+
     );
 }
 
