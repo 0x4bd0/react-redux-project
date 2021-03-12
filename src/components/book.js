@@ -1,5 +1,4 @@
 const BookC = ({ book }) => {
-    console.log(book)
     return (
         <div className="book">
             <h3>

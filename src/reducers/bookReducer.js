@@ -19,9 +19,21 @@ const initState = [
     },
 ]
 
-const booksReducer = (state = initState, action) => {
+const booksReducer = (state = initState, action = {}) => {
+    const { type, payload } = action
 
-    return state
+    switch (type) {
+        case 'ADD_BOOK':
+            return [
+                ...state,
+                {
+                    title: payload.title,
+                    id: state[state.length - 1].id + 1
+                }
+            ]
+        default:
+            return state
+    }
 
 }
 
