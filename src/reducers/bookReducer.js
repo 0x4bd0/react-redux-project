@@ -32,10 +32,12 @@ const booksReducer = (state = initState, action = {}) => {
                 ...state,
                 {
                     title: payload.title,
-                    id: state[state.length - 1].id + 1,
+                    id: state[state.length - 1] ? state[state.length - 1].id + 1 : 1,
                     author: payload.author ? payload.author : 'Anonymous'
                 }
             ]
+        case 'DELETE_BOOK':
+            return [...state].filter(item => item.id !== payload.id)
         default:
             return state
     }
